@@ -4,6 +4,7 @@ import Film from './Film';
 const FilmsList = ({films}) => {
 
     const filmNodes = films.map((film) => {
+        
         { if (film.age === "U") {
             film.logo = "https://upload.wikimedia.org/wikipedia/commons/b/b3/BBFC_U_2019.svg"
         } else if (film.age === "PG") {
@@ -15,6 +16,7 @@ const FilmsList = ({films}) => {
         } else if (film.age === "18") {
             film.logo = "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/BBFC_18_2019.svg/1024px-BBFC_18_2019.svg.png"
         }}
+
         return(
             <Film key={film.id} logo={film.logo} url={film.url} date={film.date}>{film.title}</Film>
         );
