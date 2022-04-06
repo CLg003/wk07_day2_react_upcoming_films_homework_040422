@@ -23,7 +23,7 @@ const FilmsList = ({films}) => {
     });
 
     return(
-        <section className="films-list">
+        <section id="films-list">
             <h2>Top 5 Films Coming Soon</h2>
             <ul>
                 {filmNodes}

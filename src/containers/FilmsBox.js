@@ -43,11 +43,11 @@ const FilmsBox = () => {
     ]);
 
     return(
-        <>
+        <section id="films-box">
             <h1>Upcoming Film Releases</h1>
             <FilmsList films={films}/>
             <MoreFilms/>
-        </>
+        </section>
     );
 }
 
